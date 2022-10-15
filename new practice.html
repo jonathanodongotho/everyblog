@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>my blog site</title>
+  <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+  font-family: montserrat;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.name{
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+  text-align: center;
+  padding: 20px;
+  background-color: #565954;
+  cursor: pointer;
+  border-bottom: solid grey 0.1px;
+}
+header{
+  width: 100%;
+}
+.name:hover {
+  background-color:#454743 ;
+  font-size: 180%;
+}
+.menu{
+  text-align: center;
+  background-color: #71756d;
+}
+nav ul li{
+  padding: 10px;
+  border-bottom: solid grey 0.1px;
+  cursor: pointer;
+}
+nav ul li a{
+  color: white;
+  padding: 10px;
+}
+nav ul :hover {
+  background-color: #565954;
+  font-size: 105%;
+}
+@media screen and (min-width: 700px){
+  *{}
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #565954;
+  }
+  nav ul li{
+    border: none;
+    background-color: #565954;
+    float: left;
+  padding: 5px;
+  padding-top: 25px;
+  }
+  .name:hover {
+  background-color:#565954 ;
+  font-size: 27px;}
+  nav ul :hover {
+  background-color: #565954;
+  font-size: 105%;
+}
+.menu{
+  background-color: #565954;
+}
+.name{
+  padding-top: 20px;
+}
+}
+</style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="name">
+      <p>M<span style="color: yellow; font-size: 28px;">Y</span> BLOG</p>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="menu1" class="home">HOME</a></li>
+          <li><a href="menu2" class="popular">POPULAR</a></li>
+          <li><a href="menu3" class="services">SERVICES</a></li>
+          <li><a href="menu4" class="about">ABOUT</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+
+</body>
+</html>
